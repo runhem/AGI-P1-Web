@@ -1,0 +1,43 @@
+.how-it-works {
+  background-color: #d6e5ff;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+}
+
+.header {
+  font-size: 40pt;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 200;
+  width: 55%;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.content {
+  font-size: 12pt;
+  font-family: sans-serif;
+  font-weight: 200;
+  // width: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.blowing {
+  margin-left: 7%;
+  width: 60%;
+}
+
+.blowing p {
+  margin-left: 10%;
+}
+
+.img {
+  background-color: red;
+  width: 4%;
+  float: left;
+  text-align: center;
+  border-radius: 100%;
+}
