@@ -1,3 +1,4 @@
+import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
@@ -6,6 +7,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
   imports: [
     CommonModule
   ],
-  declarations: [HowItWorksComponent]
+  declarations: [HomeComponent, HowItWorksComponent],
+  exports: [HomeComponent]
 })
 export class HomeModule { }
