@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HeaderModule } from './header/header.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,6 +15,7 @@ import { FooterModule } from './footer/footer.module';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([]),
     HomeModule,
     HeaderModule,
     FooterModule

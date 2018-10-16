@@ -42,20 +42,21 @@ export class HomeComponent implements OnInit, OnDestroy {
   private _onDestroy = new Subject();
   public animationState = 'init';
   public transitionDone = false;
+  public scroll = 0;
 
   constructor() { }
   ngOnInit() {
     fromEvent(window, 'scroll')
     .pipe(takeUntil(this._onDestroy))
     .subscribe(() => {
-      const offsetTop = (document.documentElement.scrollTop || document.body.scrollTop) / 100;
-      console.log(offsetTop);
-      if (this.animationState !== 'init' && offsetTop === 0) {
+      this.scroll = (document.documentElement.scrollTop || document.body.scrollTop) / 100;
+      console.log(this.scroll);
+      if (this.animationState !== 'init' && this.scroll === 0) {
         this.animationState = 'init';
-      } else if (this.animationState === 'init' && offsetTop > 0) {
+      } else if (this.animationState === 'init' && this.scroll > 0) {
         this.animationState = 'transition';
       }
-      // else if (this.animationState === 'transition' && offsetTop >= 0.52) {
+      // else if (this.animationState === 'transition' && this.scroll >= 0.52) {
       //   this.animationState = 'content';
       // }
     });
