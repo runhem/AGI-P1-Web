@@ -1,22 +1,21 @@
-<div id="app">
-  <div id="h">
-    <div id="h-header">
-        <h1 id="h-header-title-wrap">
-            <span id="h-header-title">ZeppelinARe</span>
-            <span id="h-header-line"></span>
+
+
+    <div class="intro">
+        <img id="background-img" src="../../assets/img/00.jpg" [@fade2]="animationState">
+        <h1 class="intro-title-wrap" [@zoom]="animationState">
+            <span id="intro-title">ZeppelinARe</span>
         </h1>
-        <div id="h-header-background-wrap">
-            <img id="h-header-background" src="../../assets/img/01.png" alt="">
+        <div class="intro-background-wrap">
+            <img id="intro-background" src="../../assets/img/clouds2.png" alt=""[@fade]="animationState">
         </div>
-        <div id="h-header-center-wrap">
-            <img id="h-header-center" src="../../assets/img/02.png" alt="">
+        <!-- <div id="intro-center-wrap">
+            <img id=intro-center" src="../../assets/img/02.png" alt="" [@fade]="animationState">
+        </div> -->
+        <div id="intro-foreground-wrap">
+            <img id="intro-foreground" src="../../assets/img/clouds.png" alt="" [@fade]="animationState">
         </div>
-        <div id="h-header-foreground-wrap">
-            <img id="h-header-foreground" src="../../assets/img/03.png" alt="">
-        </div>
-      </div>
-    <div class="content">
-      <app-how-it-works></app-how-it-works>
     </div>
-  </div>
-</div>
+    <div class="content">
+        <app-how-it-works></app-how-it-works>
+    </div>
+

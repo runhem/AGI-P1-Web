@@ -1,28 +1,63 @@
+import { trigger, style, state, transition, animate } from '@angular/animations';
+import { takeUntil } from 'rxjs/operators';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { fromEvent, Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('zoom', [
+      state('init', style({
+        transform: 'scale(1)',
+      })),
+      state('transition', style({
+        transform: 'scale(2)',
+        opacity: '0'
+      })),
+      transition('init <=> transition', animate('2s linear'))
+    ]),
+    trigger('fade', [
+      state('init', style({
+        opacity: '0.8',
+      })),
+      state('transition', style({
+        opacity: '0',
+      })),
+      transition('init <=> transition', animate('2s linear'))
+    ]),
+    trigger('fade2', [
+      state('init', style({
+        opacity: '1',
+      })),
+      state('transition', style({
+        opacity: '0',
+      })),
+      transition('init <=> transition', animate('2s linear'))
+    ]),
+  ]
 })
 export class HomeComponent implements OnInit, OnDestroy {
   private _onDestroy = new Subject();
+  public animationState = 'init';
+  public transitionDone = false;
 
   constructor() { }
-
   ngOnInit() {
-    console.log(window.innerHeight);
     fromEvent(window, 'scroll')
+    .pipe(takeUntil(this._onDestroy))
     .subscribe(() => {
-      console.log('hej');
-      const h =  document.documentElement,
-      b =  document.body,
-      st =  'scrollTop',
-      sh =  'scrollHeight';
-      const percent = Math.round((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100);
-      console.log(h[st], b[st], h[sh], b[sh]);
+      const offsetTop = (document.documentElement.scrollTop || document.body.scrollTop) / 100;
+      console.log(offsetTop);
+      if (this.animationState !== 'init' && offsetTop === 0) {
+        this.animationState = 'init';
+      } else if (this.animationState === 'init' && offsetTop > 0) {
+        this.animationState = 'transition';
+      }
+      // else if (this.animationState === 'transition' && offsetTop >= 0.52) {
+      //   this.animationState = 'content';
+      // }
     });
   }
 
