@@ -29,8 +29,8 @@
 }
 
 .section {
+  margin: 3%;
   margin-top: 2%;
-  margin-left: 7%;
   width: 22%;
   min-width: 300px;
   min-height: 22%;
@@ -43,20 +43,24 @@
   padding: 15px;
 }
 .section > .text {
-  margin-left: 7%;
-  width: 70%;
+  // margin-left: 7%;
+  width: 85%;
   cursor: default;
   display: inline-block;
   vertical-align: top;
 }
 .section > .text > p {
-  visibility: hidden;
+  // visibility: hidden;
 }
-
 .section h2 {
   font-size: 20pt;
   font-family: 'Lobster', sans-serif;
   font-weight: 200;
+}
+.section h3 {
+  font-size: 16pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 .section:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 5px 12px rgba(0, 0, 0, 0.22);
@@ -71,24 +75,6 @@
   width: auto;
   height: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-#inversed {
-  text-align: right !important;
-  margin-left: 20%;
-}
-
-#inversed > .text {
-  margin-right: 7% !important;
-}
-#inversed > img {
-  max-width: 230px;
-  max-height: 230px;
-  width: auto;
-  height: auto;
-  transform: rotate(-5deg);
-}
-#inversed:hover > img {
-  transform: scale(1.2);
 }
 .btn {
   width: 20%;
