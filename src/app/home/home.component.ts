@@ -27,12 +27,12 @@ import { fromEvent, Subject } from 'rxjs';
       })),
       transition('init <=> transition', animate('2s linear'))
     ]),
-    trigger('fade2', [
+    trigger('fadeIn', [
       state('init', style({
-        opacity: '1',
+        opacity: '0',
       })),
       state('transition', style({
-        opacity: '0',
+        opacity: '1',
       })),
       transition('init <=> transition', animate('2s linear'))
     ]),
@@ -42,22 +42,25 @@ export class HomeComponent implements OnInit, OnDestroy {
   private _onDestroy = new Subject();
   public animationState = 'init';
   public transitionDone = false;
-  public scroll = 0;
+  public scroll: number;
 
   constructor() { }
   ngOnInit() {
+    // window.scrollTo(0, 0);
     fromEvent(window, 'scroll')
-    .pipe(takeUntil(this._onDestroy))
+    // .pipe(takeUntil(this._onDestroy))
     .subscribe(() => {
-      this.scroll = (document.documentElement.scrollTop || document.body.scrollTop) / 100;
+      this.scroll = (document.documentElement.scrollTop || document.body.scrollTop);
       console.log(this.scroll);
       if (this.animationState !== 'init' && this.scroll === 0) {
         this.animationState = 'init';
-      } else if (this.animationState === 'init' && this.scroll > 0) {
+      } else if (this.animationState === 'init' && this.scroll > 0 && this.scroll < 5) {
         this.animationState = 'transition';
-      }
-      // else if (this.animationState === 'transition' && this.scroll >= 0.52) {
-      //   this.animationState = 'content';
+      } 
+      // else if (this.animationState === 'transition' && this.scroll > 5 && this.scroll < 10) {
+      //   this.animationState = 'transition2';
+      // } else if (this.animationState === 'transition2' && this.scroll > 10 && this.scroll < 15) {
+      //   this.animationState = 'transition3';
       // }
     });
   }

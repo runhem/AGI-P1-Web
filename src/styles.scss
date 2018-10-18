@@ -1,6 +1,5 @@
 
 html, body {
-    height: 100%;
     font-family: 'Open Sans', sans-serif;
     color: black;
     -webkit-font-smoothing: antialiased;
@@ -8,6 +7,12 @@ html, body {
 }
 
 body {
+    min-height: 100vh;
     overflow-y: scroll;
-    min-height: 949px;
+    // min-height: 949px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }

@@ -1,20 +1,22 @@
-
-
-    <div class="intro">
-        <img id="background-img" src="../../assets/img/00.jpg" [@fade2]="animationState">
-        <h1 class="intro-title-wrap" [@zoom]="animationState">
-            <span id="intro-title">ZeppelinARe</span>
-        </h1>
-        <div class="intro-background-wrap">
-            <img id="intro-background" src="../../assets/img/clouds2.png" alt=""[@fade]="animationState">
-        </div>
-        <!-- <div id="intro-center-wrap">
-            <img id=intro-center" src="../../assets/img/02.png" alt="" [@fade]="animationState">
-        </div> -->
-        <div id="intro-foreground-wrap">
-            <img id="intro-foreground" src="../../assets/img/clouds.png" alt="" [@fade]="animationState">
-        </div>
+<!-- <div class="fixed"></div> -->
+<div class="intro">
+    <div id="backgroundWrapper">
+        <div id="skyBackgorund" [@fade]="animationState"></div>
     </div>
-    <div class="content">
+    <!-- <img id="background-img" src="../../assets/img/00.jpg" [@fade2]="animationState"> -->
+    <h1 class="intro-title-wrap" [@zoom]="animationState">
+        <span id="intro-title">ZeppelinARe</span>
+    </h1>
+    <div class="intro-background-wrap">
+        <img id="intro-background" src="../../assets/img/clouds2.png" alt=""[@fade]="animationState">
+    </div>
+    <!-- <div id="intro-center-wrap">
+        <img id="intro-center" src="../../assets/img/zep.png" alt="" [@fade]="animationState">
+    </div> -->
+    <div id="intro-foreground-wrap">
+        <img id="intro-foreground" src="../../assets/img/clouds.png" alt="" [@fade]="animationState">
+    </div>  
+</div>
+    <div class="content" [@fadeIn]="animationState">
         <app-how-it-works></app-how-it-works>
     </div>
