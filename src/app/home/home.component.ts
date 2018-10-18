@@ -1,5 +1,4 @@
 import { trigger, style, state, transition, animate } from '@angular/animations';
-import { takeUntil } from 'rxjs/operators';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { fromEvent, Subject } from 'rxjs';
 
@@ -56,7 +55,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.animationState = 'init';
       } else if (this.animationState === 'init' && this.scroll > 0 && this.scroll < 5) {
         this.animationState = 'transition';
-      } 
+      }
       // else if (this.animationState === 'transition' && this.scroll > 5 && this.scroll < 10) {
       //   this.animationState = 'transition2';
       // } else if (this.animationState === 'transition2' && this.scroll > 10 && this.scroll < 15) {
@@ -69,5 +68,4 @@ export class HomeComponent implements OnInit, OnDestroy {
     this._onDestroy.next();
     this._onDestroy.complete();
   }
-
 }

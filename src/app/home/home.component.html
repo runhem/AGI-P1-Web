@@ -10,13 +10,17 @@
     <div class="intro-background-wrap">
         <img id="intro-background" src="../../assets/img/clouds2.png" alt=""[@fade]="animationState">
     </div>
-    <!-- <div id="intro-center-wrap">
-        <img id="intro-center" src="../../assets/img/zep.png" alt="" [@fade]="animationState">
-    </div> -->
     <div id="intro-foreground-wrap">
         <img id="intro-foreground" src="../../assets/img/clouds.png" alt="" [@fade]="animationState">
     </div>  
 </div>
-    <div class="content" [@fadeIn]="animationState">
-        <app-how-it-works></app-how-it-works>
+    <div class="hiw-content" id="hiw">
+      <app-how-it-works></app-how-it-works>
+    <div class="team-content">
+      <app-team></app-team>
     </div>
+  </div>
+
+    <!-- <div class="content" [@fadeIn]="animationState">
+        <app-how-it-works></app-how-it-works>
+    </div> -->
