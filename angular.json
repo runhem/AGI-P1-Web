@@ -24,7 +24,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": ["../node_modules/scrollreveal/dist/scrollreveal.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {

@@ -22,9 +22,9 @@
 }
 
 .content {
-  font-size: 12pt;
-  font-family: sans-serif;
-  font-weight: 200;
+  font-size: 14pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   height: 700px;
   margin: auto;
   margin-top: 3%;
@@ -47,7 +47,6 @@
   cursor: default;
   display: inline-block;
   vertical-align: top;
-  // height: 2000px;
 }
 
 .section h2 {
@@ -68,6 +67,15 @@
   width: auto;
   height: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#blowing {
+  margin-left: 2%;
+  max-width: 150px;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transform: rotate(10deg);
+}
+.section:hover > #blowing {
+  transform: rotate(-10deg) translate(40px);
 }
 #inversed {
   text-align: right !important;
@@ -105,9 +113,10 @@
   text-align: center;
   display: inline-block;
   font-size: 12pt;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
