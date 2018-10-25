@@ -33,7 +33,7 @@
   margin-top: 2%;
   width: 22%;
   min-width: 300px;
-  min-height: 22%;
+  // min-height: 1000px;
   display: inline-block;
   background-color: #f7f9ff;
   border-radius: 20px;
@@ -41,6 +41,7 @@
   align-items: center;
   text-align: center;
   padding: 15px;
+  padding-bottom: 30px;
 }
 .section > .text {
   // margin-left: 7%;
@@ -103,4 +104,23 @@
 .btn > button:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.contact {
+  display: inline-block;
+  height: 40%;
+  width: 30%;
+  margin: auto;
+  margin-top: 2%;
+  // margin-bottom: 2%;
+}
+.contact > a > img {
+  max-width: 30px;
+  max-height: 30px;
+  float: left;
+}
+.contact > a > #linkedin {
+  // max-width: 50px;
+  // max-height: 50px;
+  float: right;
 }
