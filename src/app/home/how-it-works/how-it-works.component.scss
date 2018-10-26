@@ -11,7 +11,7 @@
 }
 
 .header {
-  font-size: 40pt;
+  font-size: 8vh;
   background: linear-gradient(40deg, #f5af19, #ef5310 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,21 +24,24 @@
 }
 
 .content {
-  font-size: 14pt;
+  font-size: 2.5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
   height: 700px;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .section {
   margin-top: 2%;
-  margin-left: 7%;
-  width: 70%;
-  min-height: 30%;
-  display: flex;
-  background-color: #f7f9ff;
+  color: #fff;
+  width: 62%;
+  min-height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: #f7f9ff;
   border-radius: 20px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   align-items: center;
@@ -52,23 +55,23 @@
 }
 
 .section h2 {
-  font-size: 20pt;
+  font-size: 4vh;
   font-family: 'Lobster', sans-serif;
   font-weight: 200;
 }
 .section:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 5px 12px rgba(0, 0, 0, 0.22);
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 5px 12px rgba(0, 0, 0, 0.22);
   transform: scale(1.01);
 }
 .section:hover > img {
   transform: scale(1.2);
 }
 .section img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 20vh;
+  max-height: 20vh;
   width: auto;
   height: auto;
-  margin-left: 2%;
+  margin: 5%;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 #blowing {
