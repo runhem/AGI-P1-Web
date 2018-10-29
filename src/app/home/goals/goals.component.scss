@@ -32,10 +32,32 @@
   border-radius: 20px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: inline-block;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 3%;
 }
 
+.section h2 {
+    font-size: 20pt;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 200;
+}
+
+.section p {
+  text-align: justify;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+
+.section img {
+  max-width: 90%;
+  max-height: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: auto;
+  height: inherit;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
 .section:hover {
   box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
   transform: scale(1.01);
