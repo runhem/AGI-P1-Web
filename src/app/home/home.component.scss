@@ -25,7 +25,7 @@
 }
 #h-header-title {
     float: left;
-    background-image: linear-gradient(180deg,#0c6975,#448b99);
+    background-image: linear-gradient(1950deg,rgba(66, 136, 148, 0.4),rgba(31, 112, 123, 0.99));
     color: transparent;
     font-weight: 700;
     -webkit-background-clip: text;
@@ -38,7 +38,8 @@
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;}
+  right: 0;
+}
 
 .h-header-clouds {
     position: absolute;

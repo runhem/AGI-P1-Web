@@ -31,7 +31,7 @@
   min-width: 300px;
   min-height: 75vh;
   margin: 2%;
-  background-color: rgba(210, 224, 226, 1.0);
+  background-color: rgba(232, 238, 236, 1.0);
   border-radius: 20px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: block;
@@ -41,7 +41,7 @@
 
 .section > .text {
   // margin-left: 7%;
-  width: 85%;
+  width: 75%;
   cursor: default;
   display: inline-block;
   vertical-align: top;
@@ -78,7 +78,7 @@
   max-height: 50%;
   margin-top: 10px;
   width: auto;
-  height: auto;
+  height: inherit;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 50%;
   overflow: hidden;
