@@ -1,5 +1,5 @@
 #app {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,20 +11,21 @@
     z-index: -1;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 #h-header-title-wrap {
     position: absolute;
-    bottom: 20.9vw;
-    left: 15vw;
-    font-size: 12vw;
-    letter-spacing: -.02em;
-    line-height: 85%;
+    bottom: 20vw;
+    font-size: 10vw;
+    line-height: 110%;
     z-index: 1;
 }
 #h-header-title {
     float: left;
     background-image: linear-gradient(180deg,#0c6975,#448b99);
     color: transparent;
+    font-weight: 700;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-transform: translate3d(0,100%,0);
@@ -41,7 +42,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    max-width: 72vw;
+    max-width: 75vw;
     transform: perspective(100px) translate3d(35px, -100px, 40px)
 }
 .hiw-content{
