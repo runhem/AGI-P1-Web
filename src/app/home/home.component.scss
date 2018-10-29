@@ -1,10 +1,12 @@
 #app {
   position: absolute;
+  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: scroll;
+  overflow-x: hidden;
   background-image: linear-gradient(45deg, #F3F5F1, #BAD2D8)
 }
 .start{
@@ -42,7 +44,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    max-width: 75vw;
+    max-width: 100vw;
     transform: perspective(100px) translate3d(35px, -100px, 40px)
 }
 .hiw-content{
