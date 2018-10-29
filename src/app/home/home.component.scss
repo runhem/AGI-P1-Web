@@ -25,7 +25,7 @@
 }
 #h-header-title {
     float: left;
-    background-image: linear-gradient(1950deg,rgba(66, 136, 148, 0.4),rgba(31, 112, 123, 0.99));
+    background-image: linear-gradient(30deg,rgba(66, 136, 148, 0.4),rgba(31, 112, 123, 0.99));
     color: transparent;
     font-weight: 700;
     -webkit-background-clip: text;
@@ -49,5 +49,5 @@
     transform: perspective(100px) translate3d(35px, -100px, 40px)
 }
 .hiw-content{
-  min-height: 100vh;
+  min-height: 80vh;
 }

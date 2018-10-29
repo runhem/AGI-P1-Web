@@ -1,0 +1,42 @@
+.header {
+  font-size: 8vh;
+  background: linear-gradient(40deg, #f5af19, #ef5310 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 200;
+  margin: auto;
+  margin-top: 3%;
+  text-align: center;
+}
+
+#container {
+  font-size: 12pt;
+  font-family: sans-serif;
+  font-weight: 200;
+  margin-top: 3%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 4%;
+}
+
+.section {
+  width: 35%;
+  min-width: 300px;
+  min-height: 40vh;
+  margin: 1%;
+  background-color: rgba(232, 238, 236, 1.0);
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: inline-block;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.section:hover {
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
