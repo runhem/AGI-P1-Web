@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { HeaderModule } from './header/header.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

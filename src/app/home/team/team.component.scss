@@ -1,18 +1,15 @@
 .team {
-  background-image: linear-gradient(40deg, #bad3ff, #f7f9ff 80%);
   width: 100%;
   position: absolute;
   align-items: center;
-  // overflow: scroll;
 }
 .header {
-  font-size: 40pt;
+  font-size: 8vh;
   background: linear-gradient(40deg, #f5af19, #ef5310 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Lobster', sans-serif;
   font-weight: 200;
-  width: 55%;
   margin: auto;
   margin-top: 3%;
   text-align: center;
@@ -24,56 +21,67 @@
   font-weight: 200;
   margin-top: 3%;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section {
-  margin: 3%;
-  margin-top: 2%;
   width: 22%;
   min-width: 300px;
-  // min-height: 1000px;
-  display: inline-block;
-  background-color: #f7f9ff;
+  min-height: 75vh;
+  margin: 2%;
+  background-color: rgba(232, 238, 236, 1.0);
   border-radius: 20px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-  padding-bottom: 30px;
+  display: block;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
+
 .section > .text {
   // margin-left: 7%;
-  width: 85%;
+  width: 75%;
   cursor: default;
   display: inline-block;
   vertical-align: top;
+
 }
 .section > .text > p {
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 15px;
   // visibility: hidden;
 }
 .section h2 {
   font-size: 20pt;
   font-family: 'Lobster', sans-serif;
   font-weight: 200;
+  margin-top: 20px;
 }
 .section h3 {
-  font-size: 16pt;
+  font-size: 11pt;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.5);
 }
 .section:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 5px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
   transform: scale(1.01);
 }
 .section:hover > img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .section img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 10px;
   width: auto;
-  height: auto;
+  height: inherit;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 50%;
+  overflow: hidden;
 }
 .btn {
   width: 20%;
@@ -116,6 +124,7 @@
   max-width: 30px;
   max-height: 30px;
   float: left;
+  border-radius: 0px;
 }
 .contact > a > #linkedin {
   // max-width: 50px;

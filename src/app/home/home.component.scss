@@ -1,59 +1,53 @@
 #app {
-  position: fixed;
+  position: absolute;
+  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: scroll;
+  overflow-x: hidden;
+  background-image: linear-gradient(45deg, #F3F5F1, #BAD2D8)
+}
+.start{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#h-header-title-wrap {
+    position: absolute;
+    bottom: 20vw;
+    font-size: 10vw;
+    line-height: 110%;
+    z-index: 1;
+}
+#h-header-title {
+    float: left;
+    background-image: linear-gradient(30deg,rgba(66, 136, 148, 0.4),rgba(31, 112, 123, 0.99));
+    color: transparent;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+#h-header-background-wrap, #h-header-center-wrap, #h-header-foreground-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.h-header-clouds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100vw;
+    transform: perspective(100px) translate3d(35px, -100px, 40px)
 }
 .hiw-content{
-  min-height: 100vh;
+  min-height: 80vh;
 }
-// #h {
-//   overflow: hidden;
-// }
-// #h-header {
-//   position: fixed;
-//   z-index: 1;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   background-position: 50%;
-//   background-image: url(../../assets/img/home/00.jpg);
-//   background-repeat: no-repeat;
-//   overflow: hidden;
-// }
-// #h-header-title-wrap {
-//   position: absolute;
-//   bottom: 20.9vw;
-//   left: 7.5vw;
-//   font-size: 12vw;
-//   letter-spacing: -0.02em;
-//   line-height: 85%;
-// }
-
-// #h-header-background-wrap,
-// #h-header-center-wrap,
-// #h-header-foreground-wrap {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-// }
-// #h-header img {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: auto;
-// }
-
-// #h-header-scroll-line-wrap {
-//   position: absolute;
-//   bottom: 0;
-//   left: 76px;
-//   width: 2px;
-//   height: 106px;
-//   overflow: hidden;
-// }
