@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Agi-web-app": {
+    "AGI-P1-Web": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Agi-web-app",
+            "outputPath": "dist/AGI-P1-Web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Agi-web-app:build"
+            "browserTarget": "AGI-P1-Web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Agi-web-app:build:production"
+              "browserTarget": "AGI-P1-Web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Agi-web-app:build"
+            "browserTarget": "AGI-P1-Web:build"
           }
         },
         "test": {
@@ -91,7 +91,7 @@
         }
       }
     },
-    "Agi-web-app-e2e": {
+    "AGI-P1-Web-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -99,11 +99,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Agi-web-app:serve"
+            "devServerTarget": "AGI-P1-Web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Agi-web-app:serve:production"
+              "devServerTarget": "AGI-P1-Web:serve:production"
             }
           }
         },
@@ -117,5 +117,5 @@
       }
     }
   },
-  "defaultProject": "Agi-web-app"
+  "defaultProject": "AGI-P1-Web"
 }
